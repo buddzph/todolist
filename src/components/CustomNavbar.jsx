@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './CustomNavbar.css';
 
@@ -9,7 +9,9 @@ export default class CustomNavbar extends Component {
             <Navbar default collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">Codelife</Link>
+                        <Link to="/">
+                            <Image src="assets/fdg.png" className="logo" rounded />
+                        </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>

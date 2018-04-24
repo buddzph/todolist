@@ -1,5 +1,12 @@
+.logo {
+    border: solid 2px #3c3d41;
+    width: 80px;
+}
 nav.navbar, .navbar-default {
-    background-color: #2892D7 !important;
+    background-color: #3c3d41 !important;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .navbar-default {
@@ -13,6 +20,7 @@ nav.navbar, .navbar-default {
 }
 
 .navbar-default .navbar-brand {
+    padding-top: 8px;
     color:  white;
 }
 
