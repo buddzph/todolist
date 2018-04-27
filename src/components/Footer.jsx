@@ -3,7 +3,12 @@ import { Nav, NavItem, Row, Col, Image, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
-export default class About extends Component {
+export default class Footer extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { year: new Date().getFullYear() };
+    }
+
     render(){
         return (
             <footer id="myFooter">
@@ -51,7 +56,7 @@ export default class About extends Component {
                     </Row>
                 </div>
                 <div className="footer-copyright">
-                    <p>© 2018 Copyright <Link to="http://freddg.com">fredDG.com</Link></p>
+                    <p>&copy; {this.state.year} Copyright <Link to="http://freddg.com">fredDG.com</Link></p>
                 </div>
             </footer>
         )
