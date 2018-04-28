@@ -9,6 +9,7 @@ export default class Home extends Component {
         super(props);
 
         this.databaseRef = this.props.database.ref().child('post');
+        this.updateLocalState = this.updateLocalState.bind(this);
         
         this.addPost = this.addPost.bind(this);
 
@@ -31,16 +32,13 @@ export default class Home extends Component {
     }
 
     updateLocalState(response) {
-        
+        const posts = this.state.posts;
         const brokenDownPost = response.postBody.split(/[\r\n]/g);
-        console.log(brokenDownPost);
-
-        // const posts = this.state.posts;
-        // const brokenDownPost = response.postBody.split(/[\r\n]/g);
-        // posts.push(brokenDownPost);
-        // this.setState({
-        //     posts: posts
-        // });
+        posts.push(brokenDownPost);
+        // console.log(posts);
+        this.setState({
+             posts: posts
+        });
     }
 
     render() {
