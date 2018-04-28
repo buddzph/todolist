@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Nav, NavItem, Row, Col, Image, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Footer.css';
+import './assets/Footer.css';
 
 export default class Footer extends Component {
     constructor(props) {

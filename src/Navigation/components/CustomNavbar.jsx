@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './CustomNavbar.css';
+import './assets/CustomNavbar.css';
 
 export default class CustomNavbar extends Component {
     render(){
@@ -9,9 +9,7 @@ export default class CustomNavbar extends Component {
             <Navbar default collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">
-                            <Image src="assets/fdg.png" className="logo" rounded />
-                        </Link>
+                        <Link to="/">Simple Discussion App</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
@@ -19,15 +17,6 @@ export default class CustomNavbar extends Component {
                     <Nav pullRight>
                         <NavItem eventKey={1} componentClass={Link} href="/" to="/">
                             Home
-                        </NavItem>
-                        <NavItem eventKey={2} componentClass={Link} href="/about" to="/about">
-                            About
-                        </NavItem>
-                        <NavItem eventKey={3} componentClass={Link} href="/news" to="/news">
-                            News
-                        </NavItem>
-                        <NavItem eventKey={4} componentClass={Link} href="/chord" to="/chord">
-                            Chord
                         </NavItem>
                     </Nav>
                 </Navbar.Collapse>

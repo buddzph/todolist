@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap';
-import './Home.css';
+import './assets/Home.css';
 
 export default class Home extends Component {
     render(){
@@ -16,7 +16,7 @@ export default class Home extends Component {
                     </Link>
                 </Jumbotron>
                 <Row className="show-grid text-center">
-                    <Col xs={12} sm={4} className="person-wrapper">
+                    {/* <Col xs={12} sm={4} className="person-wrapper">
                         <Image src="assets/person-1.jpg" circle className="profile-pic" />
                         <h3>FredDG Dev</h3>
                         <p>Pig filet mignon ribeye picanha, capicola pancetta flank bresaola. Sirloin brisket spare ribs, prosciutto doner filet mignon shoulder shank.</p>
@@ -30,7 +30,7 @@ export default class Home extends Component {
                         <Image src="assets/person-3.jpg" circle className="profile-pic" />
                         <h3>KateFayeTipen Girl</h3>
                         <p>Pork loin biltong porchetta short ribs, venison rump leberkas. Ground round landjaeger buffalo ribeye ham hock.</p>
-                    </Col>
+                    </Col> */}
                 </Row>
             </Grid>
         )

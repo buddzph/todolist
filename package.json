@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bash": "0.0.1",
     "chordsheetjs": "^2.3.0",
     "create-react-app": "^1.5.2",
     "firebase": "^4.13.1",
