@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Jumbotron, Grid } from 'react-bootstrap';
-import Post from '../../Post/component/Post';
-import PostEditor from '../../PostEditor/component/PostEditor';
+import Post from '../../Post/components/Post';
+import PostEditor from '../../PostEditor/components/PostEditor';
 import './assets/ThreadDisplay.css';
 
 export default class Home extends Component {

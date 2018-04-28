@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ThreadDisplay from '../../ThreadDisplay/component/ThreadDisplay';
+import ThreadDisplay from '../../ThreadDisplay/components/ThreadDisplay';
 import firebase from 'firebase/app';
 import 'firebase/database';
 import './assets/Home.css';
