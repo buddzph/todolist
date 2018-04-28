@@ -1,5 +1,6 @@
 import Rebase from 're-base';
 import firebase from 'firebase';
+// import 'firebase/database'
 
 var config = {
     apiKey: process.env.REACT_APP_FIREBASE_KEY,
@@ -12,6 +13,7 @@ var config = {
 
 const app = firebase.initializeApp(config);
 const base = Rebase.createClass(app.database())
+//const database = this.app.database();
 
 export { base }
 
