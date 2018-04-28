@@ -4,13 +4,11 @@ import './assets/Post.css';
 const Post = (props) => (
     <div className="panel panel-default post-body">
         <div className="panel-body">
-            { props.postBody.map((postPart, idx) => {
-
-                <div>test</div>
-                
-                console.log(postPart);
-                // postPart
-            }) }
+            {
+                props.postBody.map((postPart, idx) => (
+                    <div>{postPart}</div>
+                ))
+            }
         </div>
     </div>
 );
