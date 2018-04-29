@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import ThreadDisplay from '../../ThreadDisplay/components/ThreadDisplay';
+import React, { Component } from 'react';
+import { Jumbotron, Grid } from 'react-bootstrap';
 import firebase from 'firebase/app';
 import 'firebase/database';
 import './assets/Home.css';
@@ -24,7 +24,14 @@ export default class Home extends Component {
 
     render(){
         return (
-            <ThreadDisplay database={this.database} />
+            <Grid>
+                <div className="top-space">&nbsp;</div>
+                <Jumbotron>
+                    <h2>Simple React CRUD</h2>
+                    <p>This is a simple web app that descibes how to make a simple CRUD application using React.</p>
+                    
+                </Jumbotron>
+            </Grid>
         )
     }
 }
