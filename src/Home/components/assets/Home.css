@@ -22,3 +22,15 @@ h3 {
 }
 
 .top-space {margin-top: 50px;}
+
+.list-group-item {
+    padding-bottom: 1.5em;
+}
+
+.btnRemove {
+    margin-left: 10px;
+}
+
+.btnDetails {
+    margin-left: 10px;
+}

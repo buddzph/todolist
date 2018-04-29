@@ -9,7 +9,7 @@ export default class CustomNavbar extends Component {
             <Navbar default collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">Simple Discussion App</Link>
+                        <Link to="/">Simple React CRUD</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
