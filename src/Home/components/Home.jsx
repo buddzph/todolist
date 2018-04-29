@@ -10,12 +10,12 @@ export default class Home extends Component {
         super(props);
 
         const config = {
-            apiKey: "AIzaSyCqaFSKyreyflua4tCVKVziNJaxlPpBhR8",
-            authDomain: "react-simple-discussion.firebaseapp.com",
-            databaseURL: "https://react-simple-discussion.firebaseio.com",
-            projectId: "react-simple-discussion",
-            storageBucket: "react-simple-discussion.appspot.com",
-            messagingSenderId: "831714324900"
+            apiKey: process.env.REACT_APP_FIREBASE_KEY,
+            authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
+            databaseURL: process.env.REACT_APP_FIREBASE_DATABASE,
+            projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+            storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+            messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID
         }
 
         this.app = firebase.initializeApp(config);

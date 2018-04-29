@@ -1,6 +1,5 @@
 import Rebase from 're-base';
 import firebase from 'firebase';
-// import 'firebase/database'
 
 var config = {
     apiKey: process.env.REACT_APP_FIREBASE_KEY,
