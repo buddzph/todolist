@@ -10,12 +10,12 @@ export default class Home extends Component {
         super(props);
 
         const config = {
-            apiKey: process.env.REACT_APP_FIREBASE_KEY,
-            authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
-            databaseURL: process.env.REACT_APP_FIREBASE_DATABASE,
-            projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-            storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-            messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID
+            apiKey: "AIzaSyCpF4KlQMOEAqVFIkkG8o_-okZ3kVXGXaw",
+            authDomain: "todo-list-ffb0c.firebaseapp.com",
+            databaseURL: "https://todo-list-ffb0c.firebaseio.com",
+            projectId: "todo-list-ffb0c",
+            storageBucket: "todo-list-ffb0c.appspot.com",
+            messagingSenderId: "259611367292"        
         }
 
         this.app = firebase.initializeApp(config);
@@ -39,7 +39,7 @@ export default class Home extends Component {
                 key: Date.now()
             }
             
-            this.databaseRef.push().set({ newItem });
+            this.databaseRef.push().set( newItem );
             
             this.setState((prevState) => {
                     return {
@@ -56,6 +56,10 @@ export default class Home extends Component {
         let filteredItems = this.state.items.filter(function(item) {
             return (item.key !== key)
         });
+
+        console.log(key);
+        
+        // this.databaseRef.ref('todos').child(key).remove();
 
         this.setState({
             items: filteredItems
