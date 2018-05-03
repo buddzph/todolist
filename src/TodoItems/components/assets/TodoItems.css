@@ -1,0 +1,23 @@
+ul.theList  {
+    padding-left: 0;
+}
+
+.theList li {
+    color: #333;
+    background-color: #999;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    list-style: none;
+    color: #fff;
+    transition: background-color .2s ease-out;
+}
+
+.theList li:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+.c_button {
+    padding: 2px 5px;
+}
